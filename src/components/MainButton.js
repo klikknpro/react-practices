@@ -1,4 +1,5 @@
 // import MainText from "./MainText";
+// onClick most nem mukodik, fele'csd el
 
 function mainButton(props) {
   const showText = () => {

@@ -1,4 +1,5 @@
 // ez a component meg krvara nincs beillesztve sehova sehonnan
+// mind1, nem is kell mar
 import React from "react";
 import MainButton from "./MainButton";
 
