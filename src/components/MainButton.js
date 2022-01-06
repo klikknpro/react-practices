@@ -1,7 +1,9 @@
+import MainText from "./MainText";
+import ReactDOM from "react-dom";
+
 function mainButton(props) {
   const showText = () => {
-    const mainText = document.querySelector(".mainText");
-    mainText.textContent = props.textToShow;
+    // na itt kell valami state-et updatelni ...
   };
 
   return <button onClick={showText}>Click Me</button>;
