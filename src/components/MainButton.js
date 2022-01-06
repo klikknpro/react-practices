@@ -1,13 +1,12 @@
-import MainText from "./MainText";
+// import MainText from "./MainText";
 
 function mainButton(props) {
   const showText = () => {
-    <MainText text="valami" />;
-    // const mainText = document.querySelector(".mainText");
-    // mainText.textContent = props.textToShow;
+    const mainText = document.querySelector(".mainText");
+    mainText.textContent = props.textToShow;
   };
 
-  return <button onClick={showText}>Click Me</button>;
+  return <button onClick={showText}>{props.text}</button>;
 }
 
 export default mainButton;
