@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import MainButton from "./components/MainButton";
-// import MainText from "./components/MainText";
+import MainText from "./components/MainText";
 
 const someText = "Sure it works.";
 
@@ -11,7 +11,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <MainButton textToShow={someText} />
-        <div className="mainText"></div>
+        <MainText />
       </header>
     </div>
   );

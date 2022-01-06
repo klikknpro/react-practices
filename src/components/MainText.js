@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
-const [text, displayText] = useState("");
-
-const MainText = () => {
-  return <div>{text}</div>;
+const MainText = (props) => {
+  // const [text, displayText] = useState("");
+  return <div>{props.text}</div>;
 };
 
 export default MainText;
