@@ -4,14 +4,17 @@ class ButtonWithClass extends Component {
   constructor () {
     super();
     this.state = {
-      caption: "Hello"
+      greeting: "Hello",
+      title: "Main Title"
     }
   }
   render () {
     return (
       <div>
-        <p>{this.state.caption}</p>
-        <button onClick={ () => this.setState({caption: "Bye"}) }>Click Me</button>
+        <h1>{this.state.title}</h1>
+        <p>{this.state.greeting}</p>
+        <button onClick={ () => this.setState({greeting: "Bye"}) }>Click Me</button>
+        <button onClick={ () => this.setState({title: "Main Title 2"}) }>Click Me</button>
       </div>
     )
   }

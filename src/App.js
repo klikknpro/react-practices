@@ -1,5 +1,6 @@
 import "./App.css";
 import ButtonWithClass from "./components/ButtonWithClass"
+// import ButtonWithHooks from "./components/ButtonWithHooks"
 
 // const obj1 = {
 //   key1: "random stuff",
@@ -21,6 +22,7 @@ function App() {
   return (
     <div className="App">
       <ButtonWithClass/>
+      {/* <ButtonWithHooks/> */}
     </div>
   );
 }
