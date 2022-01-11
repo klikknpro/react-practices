@@ -1,18 +1,27 @@
 import { useState } from "react";
 
-const shouldShowLanding = true;
-const home = <div>Home</div>
-const landing = <div>Landing</div>
-
-const toggleButton = () => {
-  !shouldShowLanding;
+const Content = () => {
+  // a h1 szoveg menne majd ide
 }
 
 const App = () => {
+  let [shouldShowLanding, setterFunc] = useState("Home");
+
   return (
     <div>
-      <h1>Hello World</h1>
-      <button onClick={toggleButton}>Switch pages</button>
+      <div>Hello lof@sz</div>
+      {/* {shouldShowLanding ? landing : home} */}
+      <button onClick={() => setterFunc("Home")}>Go to Home</button>
+      <button onClick={() => setterFunc("Landing")}>Go to Landing</button>
+      <button onClick={() => setterFunc("About")}>Go to About</button>
+      {/* <div>{shouldShowLanding}</div> */}
+      <div>
+        {shouldShowLanding === "Home" && <div>Home</div>}
+        {shouldShowLanding === "Landing" && <div>Landing</div>}
+        {shouldShowLanding === "About" && <div>About</div>}
+        {/* hmmm conditional rendering wtf cucc ... */}
+        {shouldShowLanding === "About" || <div>This is not the About</div>}
+      </div>
     </div>
   );
 }
